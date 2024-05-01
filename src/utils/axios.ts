@@ -23,7 +23,7 @@ export const getAxiosInstance = async (
   const headers = { ...props, ...customHeaders };
 
   const instance = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://ocrivia-backend.vercel.app",
     headers,
   });
 
