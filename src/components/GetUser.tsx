@@ -4,8 +4,12 @@ import useGetUserProfile from "../hooks/api/query/useGetUserProfile";
 const GetUser = () => {
   const { getUserProfile } = useGetUserProfile();
 
+  const performOperations = async () => {
+    await getUserProfile();
+  };
+
   useEffect(() => {
-    getUserProfile();
+    performOperations();
   }, []);
 
   return null;

@@ -3,7 +3,6 @@ import { useContext, useState } from "react";
 import { AxiosResponse } from "axios";
 import { getAxiosInstance } from "../../../utils/axios";
 import { ApiRoutes } from "../../../constants/api.constants";
-import { showErrorToastMessage } from "../../../utils/toast";
 import { UserContext } from "../../../context/user.context";
 
 const useGetUserProfile = () => {
@@ -21,7 +20,6 @@ const useGetUserProfile = () => {
       const data = response.data;
       setUser(data);
     } catch (err) {
-      showErrorToastMessage("Error while getting user");
     } finally {
       setLoading(false);
     }

@@ -24,3 +24,7 @@ a {
 a:hover {
   cursor: pointer;
 }
+
+i:hover {
+  cursor: pointer;
+}

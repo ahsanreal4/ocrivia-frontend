@@ -3,7 +3,7 @@ import { UserType } from "../types/user.type";
 
 interface UserContext {
   user: UserType;
-  setUser: Dispatch<SetStateAction<UserType>>;
+  setUser: Dispatch<SetStateAction<UserType | null>>;
 }
 
 const INITIAL_STATE: UserContext = {
