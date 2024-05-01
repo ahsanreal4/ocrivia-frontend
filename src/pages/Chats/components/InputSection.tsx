@@ -75,7 +75,7 @@ const InputSection: FC<InputSectionProps> = ({
   };
 
   const submitMessage = async () => {
-    const MIN_MESSAGE_LENGTH = 8;
+    const MIN_MESSAGE_LENGTH = 5;
 
     if (message.trim().length < MIN_MESSAGE_LENGTH) {
       showErrorToastMessage(
